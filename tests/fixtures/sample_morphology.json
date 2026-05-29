@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "Galaxy": "SYN001",
+      "T": 10,
+      "SBdisk_solLum_pc2": 50
+    },
+    {
+      "Galaxy": "SYN002",
+      "T": 2,
+      "SBdisk_solLum_pc2": 120
+    }
+  ]
+}

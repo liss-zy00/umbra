@@ -1,0 +1,4 @@
+{
+  "_note": "Optional SPARC-name → PGC overrides for the EDD distance join. Keys use the same normalization as SparcMorphologyProvider.normalize_galaxy_name. When positions is empty, the pipeline builds the crosswalk from edd_cosmicflows3_distances.csv (Name, pgc) and this file is reserved for hand-curated fixes or galaxies whose Cosmicflows label does not round-trip to the SPARC stem.",
+  "positions": {}
+}

@@ -1,0 +1,278 @@
+{
+  "galaxy_identity": {
+    "galaxy_name": "UGC07089",
+    "morphology_class": "Sm/Sd Spirals",
+    "hubble_t_type": 8,
+    "distance_local_mpc": 11.339659133476628,
+    "sparc_source_file": "UGC07089_rotmod.dat",
+    "sparc_catalog_file": "SPARC_Lelli2016c.json"
+  },
+  "astrophysical_metadata": {
+    "metadata_provider": "NASA/IPAC Extragalactic Database (NED)",
+    "right_ascension_degrees": 181.49072,
+    "declination_degrees": 43.14331,
+    "redshift": 0.002568,
+    "distance_mpc": 18.0,
+    "distance_source": "SPARC header fallback",
+    "name_resolution_raw_status": "ok"
+  },
+  "planck_instrumental_source": {
+    "instrument": "Planck polarization maps",
+    "fits_filename": "COM_CompMap_IQU-thermaldust-gnilc-unires_2048_R3.00.fits",
+    "nside": 2048,
+    "unit": null,
+    "stokes_amplitude_reference": 5.622358303232117e-05,
+    "healpy_ready": true,
+    "stokes_local_measurement": {
+      "stokes_amp_center": 1.1418396008437417e-05,
+      "stokes_amp_neighbors_mean": 1.1417284276119005e-05,
+      "q_center": 1.0900417692027986e-05,
+      "u_center": -3.4000972846115474e-06,
+      "mean_neighbor_separation_rad": 0.0007194156911887613,
+      "neighbour_ring": [
+        {
+          "q": 1.073720159183722e-05,
+          "u": -3.3163762509502703e-06,
+          "theta_rad": 0.8184154939414223,
+          "phi_rad": 3.1679562191948176,
+          "separation_rad": 0.0006619192860493704
+        },
+        {
+          "q": 1.1391249245207291e-05,
+          "u": -3.544300625435426e-06,
+          "theta_rad": 0.8179809556776284,
+          "phi_rad": 3.167182067434823,
+          "separation_rad": 0.00035955434942502856
+        },
+        {
+          "q": 1.1553100193850696e-05,
+          "u": -3.635739631135948e-06,
+          "theta_rad": 0.8175464583310095,
+          "phi_rad": 3.167194900641365,
+          "separation_rad": 0.0003975768579194352
+        },
+        {
+          "q": 1.1709229511325248e-05,
+          "u": -3.7231241094559664e-06,
+          "theta_rad": 0.8171120018695084,
+          "phi_rad": 3.167207746726188,
+          "separation_rad": 0.0007513648517606709
+        },
+        {
+          "q": 1.1065583748859353e-05,
+          "u": -3.481657358861412e-06,
+          "theta_rad": 0.8175464583310095,
+          "phi_rad": 3.1679826620891056,
+          "separation_rad": 0.0003738302573163773
+        },
+        {
+          "q": 1.0407607987872325e-05,
+          "u": -3.253538352510077e-06,
+          "theta_rad": 0.8179809556776284,
+          "phi_rad": 3.1687568005945166,
+          "separation_rad": 0.0008549857807097903
+        },
+        {
+          "q": 1.0241852578474209e-05,
+          "u": -3.180181920470204e-06,
+          "theta_rad": 0.8184154939414223,
+          "phi_rad": 3.1687431913024304,
+          "separation_rad": 0.0010284925446940045
+        },
+        {
+          "q": 1.007546507025836e-05,
+          "u": -3.105419182247715e-06,
+          "theta_rad": 0.818850073154472,
+          "phi_rad": 3.1687295956400807,
+          "separation_rad": 0.0013276016016354132
+        }
+      ],
+      "center_theta_rad": 0.8178035170863018,
+      "center_phi_rad": 3.167610625815123,
+      "status": "ok",
+      "stokes_amp_reference": 5.622358303232117e-05,
+      "reference_method": "dynamic_map_median"
+    }
+  },
+  "calibration_metadata": {
+    "stokes_reference_used": 5.622358303232117e-05,
+    "calibration_status": "OPTIMAL",
+    "reference_method": "dynamic_map_median",
+    "stokes_reference_emergency_value": 0.0001
+  },
+  "density_audit": {
+    "n_points_density_clamped": 0,
+    "n_points_total": 12,
+    "density_clamped_fraction": 0.0,
+    "max_clamped_fraction_for_reliability": 0.5,
+    "n_points_stellar_dominated": 6,
+    "stellar_dominated_fraction": 0.5,
+    "max_stellar_dominance_fraction_for_reliability": 0.6
+  },
+  "kinematic_metadata": {
+    "inclination_deg": 80.0,
+    "inclination_uncertainty_deg": 3.0,
+    "min_inclination_deg_for_reliability": 30.0,
+    "inclination_quality_passed": true,
+    "position_angle_deg": null,
+    "position_angle_uncertainty_deg": null,
+    "position_angle_source": null,
+    "vflat_kms": null,
+    "vflat_uncertainty_kms": null,
+    "distance_uncertainty_mpc": 2.088842406430165,
+    "hi_mass_1e9_solar": 1.214,
+    "luminosity_3p6um_1e9_solar": 3.585
+  },
+  "rar_diagnostics": {
+    "a0_m_s2": 1.2e-10,
+    "median_absolute_residual_dex": 0.330377829177997
+  },
+  "btfr_diagnostics": {
+    "ridge_slope": 4.0,
+    "ridge_intercept": 1.99,
+    "residual_dex": null,
+    "is_outlier": false,
+    "outlier_threshold_dex": 0.5
+  },
+  "uncertainty_propagation": {
+    "theoretical_gap_coverage_ratio_median": 0.02884748832274541,
+    "theoretical_gap_coverage_ratio_p16": 0.02884748832274541,
+    "theoretical_gap_coverage_ratio_p84": 0.02884748832274541,
+    "mc_samples": 300,
+    "mc_seed": 42
+  },
+  "plasma_diagnostics": {
+    "magnetic_field_microgauss": 0.6574678781917364,
+    "magnetic_field_within_plausibility_band": true,
+    "magnetic_field_plausibility_min_microgauss": 0.1,
+    "magnetic_field_plausibility_max_microgauss": 100.0,
+    "plasma_beta_thermal_median": 35.85245587839226,
+    "plasma_beta_above_unity_fraction": 1.0,
+    "plasma_beta_below_unity_fraction": 0.0,
+    "magnetic_dominance_flag": false,
+    "max_plasma_beta_for_mhd_dominance": 1.0,
+    "alfven_velocity_median_kms": 67.95271674909529,
+    "thermal_temperature_assumed_K": 10000.0
+  },
+  "gradient_scale_audit": {
+    "scenario_gradient_scale_kpc": 0.05,
+    "physical_neighbor_separation_kpc": 8.157928713355039,
+    "scenario_to_physical_ratio": 0.006129006731591915,
+    "magnetic_pressure_acceleration_physical_dx_median": 9.719855926549014e-13
+  },
+  "best_theoretical_scenario": {
+    "scenario_name": "scale_0.050_ion_0.001",
+    "scenario_gradient_scale_kpc": 0.05,
+    "scenario_ionization_fraction": 0.001,
+    "theoretical_gap_coverage_ratio": 0.02884748832274541,
+    "theoretical_gap_coverage_ratio_full_lorentz": 0.042958725060130015,
+    "accel_pressure_only_m_s2": 2.9165707951609264e-13,
+    "accel_full_lorentz_m_s2": -6.673516830952034e-13,
+    "pearson_correlation": 0.6969334086867253,
+    "physical_interpretation": "Intermediate regime requiring additional observational constraints",
+    "required_density_for_match_median": 7.919978026856455e-26,
+    "resolution_correction_factor": 329.8573132216905,
+    "calibrated_convergence_ratio": 0.24010315095041096,
+    "magnetic_pressure_engine_summary": {
+      "status": "ok",
+      "magnetic_field_tesla": 6.574678781917364e-11,
+      "magnetic_field_neighbors_tesla": 6.574038649723698e-11,
+      "magnetic_field_microgauss": 0.6574678781917364,
+      "magnetic_field_within_plausibility_band": true,
+      "magnetic_energy_density": 1.7199238502670622e-15,
+      "delta_magnetic_energy_density": -3.3489849961954526e-19,
+      "magnetic_pressure_gradient": -2.1706642432660276e-37,
+      "scenario_gradient_scale_kpc": 0.05,
+      "scenario_gradient_scale_m": 1.5428387907456837e+18,
+      "physical_gradient_scale_kpc": 8.157928713355039,
+      "physical_gradient_scale_m": 2.5172737742204358e+20,
+      "scenario_ionization_fraction": 0.001,
+      "stokes_amplitude_local": 1.1418396008437417e-05,
+      "stokes_amplitude_neighbors": 1.1417284276119005e-05,
+      "stokes_amplitude_reference": 5.622358303232117e-05,
+      "required_density_for_match": 7.919978026856455e-26,
+      "disk_thickness_kpc": 0.458,
+      "unreliable_points_count": 7,
+      "unreliable_reason": "Sky-map neighbor scale mixed with disk gradient scale (\u0394x); interpret as exploratory. Also screen for foreground / noise if |a_B| \u226b |a_centripetal|.",
+      "magnetic_pressure_acceleration": 2.9165707951609264e-13,
+      "magnetic_pressure_acceleration_physical_dx": 9.719855926549014e-13,
+      "accel_pressure_only_m_s2": 2.9165707951609264e-13,
+      "accel_full_lorentz_m_s2": -6.673516830952034e-13,
+      "tension_acceleration_median_m_s2": -1.023214175513295e-12,
+      "tension_term_used": true,
+      "deprojected_gradient_used": true,
+      "audit_flags": [
+        "warn_no_pa"
+      ],
+      "plasma_beta_thermal_median": 35.85245587839226,
+      "plasma_beta_above_unity_fraction": 1.0,
+      "plasma_beta_below_unity_fraction": 0.0,
+      "magnetic_dominance_flag": false,
+      "alfven_velocity_median_kms": 67.95271674909529,
+      "stellar_dominated_fraction": 0.5,
+      "n_points_stellar_dominated": 6,
+      "n_points_density_clamped": 0,
+      "n_points_total": 12,
+      "density_clamped_fraction": 0.0
+    }
+  },
+  "data_reliability_assessment": {
+    "validation_is_reliable": false,
+    "audit_flags": [
+      "fail_reliable_fraction",
+      "warn_no_pa"
+    ],
+    "reliability_failure_codes": [
+      "fail_reliable_fraction"
+    ],
+    "galactic_latitude_degrees": 71.52241098579294,
+    "reliability_note": "Too few shells retained reliable magnetometry after robust magnetic-pressure outlier rejection."
+  },
+  "all_scenarios": [
+    {
+      "scenario_name": "scale_0.050_ion_0.001",
+      "theoretical_gap_coverage_ratio": 0.02884748832274541,
+      "pearson_correlation": 0.6969334086867253
+    },
+    {
+      "scenario_name": "scale_0.050_ion_0.010",
+      "theoretical_gap_coverage_ratio": 0.002884748832274542,
+      "pearson_correlation": 0.696933408686725
+    },
+    {
+      "scenario_name": "scale_0.050_ion_0.100",
+      "theoretical_gap_coverage_ratio": 0.00028847488322745416,
+      "pearson_correlation": 0.696933408686725
+    },
+    {
+      "scenario_name": "scale_0.100_ion_0.001",
+      "theoretical_gap_coverage_ratio": 0.014423744161372706,
+      "pearson_correlation": 0.6969334086867253
+    },
+    {
+      "scenario_name": "scale_0.100_ion_0.010",
+      "theoretical_gap_coverage_ratio": 0.001442374416137271,
+      "pearson_correlation": 0.696933408686725
+    },
+    {
+      "scenario_name": "scale_0.100_ion_0.100",
+      "theoretical_gap_coverage_ratio": 0.00014423744161372708,
+      "pearson_correlation": 0.696933408686725
+    },
+    {
+      "scenario_name": "scale_0.500_ion_0.001",
+      "theoretical_gap_coverage_ratio": 0.002884748832274542,
+      "pearson_correlation": 0.6969334086867249
+    },
+    {
+      "scenario_name": "scale_0.500_ion_0.010",
+      "theoretical_gap_coverage_ratio": 0.00028847488322745416,
+      "pearson_correlation": 0.6969334086867253
+    },
+    {
+      "scenario_name": "scale_0.500_ion_0.100",
+      "theoretical_gap_coverage_ratio": 2.8847488322745413e-05,
+      "pearson_correlation": 0.6969334086867248
+    }
+  ]
+}

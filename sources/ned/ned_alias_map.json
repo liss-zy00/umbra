@@ -1,0 +1,18 @@
+{
+  "_comment": "NED name-resolution configuration for SPARC labels NED's bare-name interpreter rejects. Three optional sections, in order of precedence at lookup time: 1) exact alias (`alias_map`): {SPARC_name -> NED-resolvable canonical query string}. Highest priority. 2) Pattern rules (`pattern_rules`): list of {`regex`, `ned_query_template`} entries. The first regex that matches the SPARC name via `re.fullmatch` produces a templated query (`{name}` is substituted by the original SPARC label). Use this for systematic prefixing of catalogues (Schombert LSB, ESO low-surface-brightness, etc.). 3) Generic permutation prefixes (`ned_prefix_attempts`): ordered list of strings tried verbatim as `f\"{prefix}{name}\"`. The empty string is always inserted at position 0 to ensure the bare name is tried first. Keys starting with `_` are ignored by the loader; you may add `_doc` fields for human notes.",
+  "alias_map": {
+    "F568-1": "LSB F568-1",
+    "F568-3": "LSB F568-3"
+  },
+  "pattern_rules": [
+    {
+      "_doc": "Schombert LSB catalogue labels (F-prefix, three digits, dash, suffix): NED needs the explicit `LSB ` qualifier to disambiguate from other F-prefixed catalogues.",
+      "regex": "^F\\d{3}-.+$",
+      "ned_query_template": "LSB {name}"
+    }
+  ],
+  "ned_prefix_attempts": [
+    "LSB ",
+    "ESO "
+  ]
+}
