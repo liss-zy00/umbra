@@ -1,0 +1,4 @@
+{
+  "_comment": "Optional SPARC galaxy_name -> {ra_deg, dec_deg} ICRS seeds for NedProvider cone search (see NED_ICRS_CONE_SEEDS_JSON). When a target is listed here, NedProvider may query_region within 2 arcmin if every name-based lookup fails. Keys starting with `_` are ignored. Leave positions empty to opt out.",
+  "positions": {}
+}

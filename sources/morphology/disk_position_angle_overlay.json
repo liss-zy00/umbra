@@ -1,0 +1,1995 @@
+{
+  "_note": "Curated disk-major-axis position angles (east of north, degrees). Each object-level PA must be backed by a traceable primary reference in the row `source` (bibcode/DOI/table or stable catalogue); do not add values from uncited guesses. Galaxies absent from this dict fall back to the axisymmetric magnetic-pressure gradient path in src/physics/engine.py and the engine emits 'warn_no_pa'. HyperLEDA pa (Paturel+2003) and NED diameters (object-level bibcodes) are examples of acceptable provenance when they explicitly list PA for that target. NED bulk workflow (2026-05-12): disk PA from NED diameters; kinematic context from NED redshifts (newest bibcodes first, cap 8); luminosity_distance_mpc_planck18 from astropy.cosmology.Planck18 when a published redshift exists (derived, not a NED distance modulus).",
+  "_provenance": "HyperLEDA (http://leda.univ-lyon1.fr/) — 'pa' column, accessed for the 10 DEFAULT_CONTROL_GALAXIES listed in src/pipeline/constants.py. | NED/IPAC via astroquery.ipac.ned (2026-05-12, UTC workflow); name candidates mirror sources/ned/ned_alias_map.json. Derived luminosity distances: Planck18 (astropy).",
+  "_schema": {
+    "<sparc_name>": {
+      "position_angle_deg": "float (east of north, deg) — required for pipeline PA overlay",
+      "position_angle_uncertainty_deg": "float or NaN — 1-sigma when published",
+      "source": "string — catalogue / NED provenance (read by SparcMorphologyProvider as position_angle_source)",
+      "ned_fetch_status": "ok | unresolved",
+      "ned_query_string": "string — NED query that resolved",
+      "ned_resolved_object_name": "string — NED Object Name",
+      "ned_kinematic_measurements_by_recency": "list[{refcode, published_redshift, published_redshift_uncertainty, published_velocity_kms, published_velocity_uncertainty_kms, luminosity_distance_mpc_planck18}] — audit only; SPARC D_Mpc remains canonical in the engine"
+    }
+  },
+  "positions": {
+    "NGC5005": {
+      "position_angle_deg": 67.0,
+      "position_angle_uncertainty_deg": 5.0,
+      "source": "HyperLEDA"
+    },
+    "NGC2841": {
+      "position_angle_deg": 153.0,
+      "position_angle_uncertainty_deg": 5.0,
+      "source": "HyperLEDA"
+    },
+    "NGC3198": {
+      "position_angle_deg": 215.0,
+      "position_angle_uncertainty_deg": 5.0,
+      "source": "HyperLEDA"
+    },
+    "DDO154": {
+      "position_angle_deg": 90.0,
+      "source": "NED diameters (NED Position Angle); refcode=2003AJ....125..525J",
+      "ned_fetch_status": "ok",
+      "ned_query_string": "DDO154",
+      "ned_resolved_object_name": "NGC 4789A",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.001248,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 374.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.53501002564878
+        },
+        {
+          "refcode": "2019AJ....157..194H",
+          "published_redshift": 0.001248,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 374.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.53501002564878
+        },
+        {
+          "refcode": "2019A&A...623A...5D",
+          "published_redshift": 0.00125,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 375.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.543888718196316
+        },
+        {
+          "refcode": "2019A&A...622A..64B",
+          "published_redshift": 0.001252,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 375.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.552767437880777
+        },
+        {
+          "refcode": "2018ApJ...861...49H",
+          "published_redshift": 0.001248,
+          "published_redshift_uncertainty": 0.000133,
+          "published_velocity_kms": 374.0,
+          "published_velocity_uncertainty_kms": 40.0,
+          "luminosity_distance_mpc_planck18": 5.53501002564878
+        },
+        {
+          "refcode": "2018A&A...609A..37C",
+          "published_redshift": 0.001248,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 374.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.53501002564878
+        },
+        {
+          "refcode": "2018A&A...609A..37C",
+          "published_redshift": 0.001251,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 375.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.548328074646433
+        },
+        {
+          "refcode": "2017MNRAS.466.4159I",
+          "published_redshift": 0.001252,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 375.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.552767437880777
+        }
+      ]
+    },
+    "UGC4483": {
+      "position_angle_deg": 70.0,
+      "position_angle_uncertainty_deg": 8.0,
+      "source": "HyperLEDA"
+    },
+    "IC2574": {
+      "position_angle_deg": 50.0,
+      "position_angle_uncertainty_deg": 5.0,
+      "source": "HyperLEDA"
+    },
+    "NGC6946": {
+      "position_angle_deg": 242.0,
+      "position_angle_uncertainty_deg": 8.0,
+      "source": "HyperLEDA"
+    },
+    "NGC5907": {
+      "position_angle_deg": 155.0,
+      "position_angle_uncertainty_deg": 3.0,
+      "source": "HyperLEDA"
+    },
+    "NGC3741": {
+      "position_angle_deg": 5.0,
+      "source": "NED diameters (NED Position Angle); refcode=1991RC3.9.C...0000d",
+      "ned_fetch_status": "ok",
+      "ned_query_string": "NGC3741",
+      "ned_resolved_object_name": "NGC 3741",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.000763,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 229.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.382728426978984
+        },
+        {
+          "refcode": "2018ApJ...864..144D",
+          "published_redshift": 0.0008,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 240.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.5468668586166796
+        },
+        {
+          "refcode": "2018A&A...609A..11K",
+          "published_redshift": 0.000764,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 229.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.3871644786273003
+        },
+        {
+          "refcode": "2017MNRAS.469.3125C",
+          "published_redshift": 0.000764,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 229.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.3871644786273003
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.000764,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 229.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.3871644786273003
+        },
+        {
+          "refcode": "2016AJ....152...50T",
+          "published_redshift": 0.000764,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 229.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.3871644786273003
+        },
+        {
+          "refcode": "2015MNRAS.450.4207B",
+          "published_redshift": 0.000764,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 229.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.3871644786273003
+        },
+        {
+          "refcode": "2015MNRAS.447.1531C",
+          "published_redshift": 0.000767,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 230.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.400472674299318
+        }
+      ]
+    },
+    "F563-V2": {
+      "position_angle_deg": 27.0,
+      "position_angle_uncertainty_deg": 8.0,
+      "source": "HyperLEDA"
+    },
+    "D564-8": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "D564-8",
+      "ned_resolved_object_name": "LSBC D564-08",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.001611,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 483.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.146937177707289
+        },
+        {
+          "refcode": "2023ApJS..267...27Z",
+          "published_redshift": 0.001604,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 481.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.115844732090921
+        },
+        {
+          "refcode": "2022ApJS..259...43C",
+          "published_redshift": 0.001614,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 484.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.160262613266195
+        },
+        {
+          "refcode": "2019MNRAS.482.4329P",
+          "published_redshift": 0.001614,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 484.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.160262613266195
+        },
+        {
+          "refcode": "2018ApJ...861...49H",
+          "published_redshift": 0.001611,
+          "published_redshift_uncertainty": 8.3e-05,
+          "published_velocity_kms": 483.0,
+          "published_velocity_uncertainty_kms": 25.0,
+          "luminosity_distance_mpc_planck18": 7.146937177707289
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.001611,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 483.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.146937177707289
+        },
+        {
+          "refcode": "2016AJ....152...50T",
+          "published_redshift": 0.001614,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 484.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.160262613266195
+        },
+        {
+          "refcode": "2015ApJS..217...27A",
+          "published_redshift": 0.00161,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 483.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.142495379417401
+        }
+      ],
+      "position_angle_deg": 52.0,
+      "source": "NED diameters (NED Position Angle); refcode=2007SDSS6.C...0000:"
+    },
+    "D631-7": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "D631-7",
+      "ned_resolved_object_name": "UGC 04115",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.001144,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 343.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.07335540933969
+        },
+        {
+          "refcode": "2019MNRAS.482.4329P",
+          "published_redshift": 0.001161,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 348.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.148813165858563
+        },
+        {
+          "refcode": "2019MNRAS.482.3403E",
+          "published_redshift": 0.001137,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 341.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.042285138359819
+        },
+        {
+          "refcode": "2019AJ....157..194H",
+          "published_redshift": 0.001137,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 341.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.042285138359819
+        },
+        {
+          "refcode": "2018ApJ...861...49H",
+          "published_redshift": 0.001137,
+          "published_redshift_uncertainty": 0.000127,
+          "published_velocity_kms": 341.0,
+          "published_velocity_uncertainty_kms": 38.0,
+          "luminosity_distance_mpc_planck18": 5.042285138359819
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.001144,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 343.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.07335540933969
+        },
+        {
+          "refcode": "2016SDSSD.C...0000:",
+          "published_redshift": 0.001159,
+          "published_redshift_uncertainty": 3.7e-05,
+          "published_velocity_kms": 348.0,
+          "published_velocity_uncertainty_kms": 11.0,
+          "luminosity_distance_mpc_planck18": 5.139935680964573
+        },
+        {
+          "refcode": "2016MNRAS.463..670P",
+          "published_redshift": 0.001137,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 341.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.042285138359819
+        }
+      ],
+      "position_angle_deg": 145.0,
+      "source": "NED diameters (NED Position Angle); refcode=1991RC3.9.C...0000d"
+    },
+    "DDO161": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "DDO161",
+      "ned_resolved_object_name": "UGCA 320",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.002482,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 744.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 11.018318000841681
+        },
+        {
+          "refcode": "2024A&A...688A.109D",
+          "published_redshift": 0.002468,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 740.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 10.956050786639322
+        },
+        {
+          "refcode": "2019MNRAS.482.4329P",
+          "published_redshift": 0.002482,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 744.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 11.018318000841681
+        },
+        {
+          "refcode": "2019MNRAS.482.1248S",
+          "published_redshift": 0.002471,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 741.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 10.969393649321704
+        },
+        {
+          "refcode": "2018ApJ...864...40P",
+          "published_redshift": 0.002482,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 744.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 11.018318000841681
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.002482,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 744.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 11.018318000841681
+        },
+        {
+          "refcode": "2016AJ....152...50T",
+          "published_redshift": 0.002475,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 742.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 10.987184227750198
+        },
+        {
+          "refcode": "2015MNRAS.447.1531C",
+          "published_redshift": 0.002475,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 742.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 10.987184227750198
+        }
+      ],
+      "position_angle_deg": 90.0,
+      "source": "NED diameters (NED Position Angle); refcode=2003AJ....125..525J"
+    },
+    "DDO168": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "DDO168",
+      "ned_resolved_object_name": "UGC 08320",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2017MNRAS.466.4159I",
+          "published_redshift": 0.00064,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 192.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.8371458407424934
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.000644,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 193.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.8548867482192377
+        },
+        {
+          "refcode": "2016AJ....152...50T",
+          "published_redshift": 0.00064,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 192.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.8371458407424934
+        },
+        {
+          "refcode": "2016AJ....151....4D",
+          "published_redshift": 0.00064,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 192.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.8371458407424934
+        },
+        {
+          "refcode": "2015MNRAS.447.1531C",
+          "published_redshift": 0.00064,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 192.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.8371458407424934
+        },
+        {
+          "refcode": "2015ApJS..217...27A",
+          "published_redshift": 0.00065,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 195.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.881498313096492
+        },
+        {
+          "refcode": "2015AJ....149..180O",
+          "published_redshift": 0.000642,
+          "published_redshift_uncertainty": 4e-06,
+          "published_velocity_kms": 192.0,
+          "published_velocity_uncertainty_kms": 1.0,
+          "luminosity_distance_mpc_planck18": 2.8460162809033496
+        },
+        {
+          "refcode": "2013AJ....146...86T",
+          "published_redshift": 0.00064,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 192.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.8371458407424934
+        }
+      ],
+      "position_angle_deg": 150.0,
+      "source": "NED diameters (NED Position Angle); refcode=1991RC3.9.C...0000d"
+    },
+    "DDO170": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "DDO170",
+      "ned_resolved_object_name": "UGC 08333",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.003136,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 940.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 13.928566006487754
+        },
+        {
+          "refcode": "2022ApJS..259...43C",
+          "published_redshift": 0.003129,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 938.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 13.897401228181062
+        },
+        {
+          "refcode": "2019MNRAS.482.4329P",
+          "published_redshift": 0.003129,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 938.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 13.897401228181062
+        },
+        {
+          "refcode": "2019AJ....157..194H",
+          "published_redshift": 0.003129,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 938.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 13.897401228181062
+        },
+        {
+          "refcode": "2019A&A...623A...5D",
+          "published_redshift": 0.003122,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 936.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 13.866236781616525
+        },
+        {
+          "refcode": "2018ApJ...861...49H",
+          "published_redshift": 0.003129,
+          "published_redshift_uncertainty": 0.000207,
+          "published_velocity_kms": 938.0,
+          "published_velocity_uncertainty_kms": 62.0,
+          "luminosity_distance_mpc_planck18": 13.897401228181062
+        },
+        {
+          "refcode": "2018A&A...609A..37C",
+          "published_redshift": 0.003119,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 935.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 13.852880691786071
+        },
+        {
+          "refcode": "2018A&A...609A..37C",
+          "published_redshift": 0.003125,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 937.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 13.879592932379676
+        }
+      ],
+      "position_angle_deg": 27.0,
+      "source": "NED diameters (NED Position Angle); refcode=1991RC3.9.C...0000d"
+    },
+    "ESO444-G084": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "ESO444-G084",
+      "ned_resolved_object_name": "ESO 444- G 084",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.001958,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 587.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 8.688650588577405
+        },
+        {
+          "refcode": "2024A&A...688A.109D",
+          "published_redshift": 0.001957,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 587.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 8.684206437538297
+        },
+        {
+          "refcode": "2024A&A...684L...6M",
+          "published_redshift": 0.001958,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 587.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 8.688650588577405
+        },
+        {
+          "refcode": "2018MNRAS.478.1611K",
+          "published_redshift": 0.001958,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 587.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 8.688650588577405
+        },
+        {
+          "refcode": "2018MNRAS.473.3256O",
+          "published_redshift": 0.001958,
+          "published_redshift_uncertainty": 1e-05,
+          "published_velocity_kms": 587.0,
+          "published_velocity_uncertainty_kms": 3.0,
+          "luminosity_distance_mpc_planck18": 8.688650588577405
+        },
+        {
+          "refcode": "2018ApJ...864...40P",
+          "published_redshift": 0.001959,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 587.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 8.693094746395476
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.001958,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 587.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 8.688650588577405
+        },
+        {
+          "refcode": "2015MNRAS.452.3139K",
+          "published_redshift": 0.001958,
+          "published_redshift_uncertainty": 1e-05,
+          "published_velocity_kms": 587.0,
+          "published_velocity_uncertainty_kms": 3.0,
+          "luminosity_distance_mpc_planck18": 8.688650588577405
+        }
+      ],
+      "position_angle_deg": 126.0,
+      "source": "NED diameters (NED Position Angle); refcode=1989ESOLV.C...0000L"
+    },
+    "F563-V1": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "LSB F563-V1",
+      "ned_resolved_object_name": "LSBC D563-03",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2018ApJ...861...49H",
+          "published_redshift": 0.013162,
+          "published_redshift_uncertainty": 0.000173,
+          "published_velocity_kms": 3946.0,
+          "published_velocity_uncertainty_kms": 52.0,
+          "luminosity_distance_mpc_planck18": 58.90469356992042
+        },
+        {
+          "refcode": "2016SDSSD.C...0000:",
+          "published_redshift": 0.013112,
+          "published_redshift_uncertainty": 1.5e-05,
+          "published_velocity_kms": 3931.0,
+          "published_velocity_uncertainty_kms": 4.0,
+          "luminosity_distance_mpc_planck18": 58.67871998063712
+        },
+        {
+          "refcode": "2016SDSSD.C...0000:",
+          "published_redshift": 0.013112,
+          "published_redshift_uncertainty": 1.5e-05,
+          "published_velocity_kms": 3931.0,
+          "published_velocity_uncertainty_kms": 4.0,
+          "luminosity_distance_mpc_planck18": 58.67871998063712
+        },
+        {
+          "refcode": "2001AJ....122.2381M",
+          "published_redshift": 0.012976,
+          "published_redshift_uncertainty": 3.3e-05,
+          "published_velocity_kms": 3890.0,
+          "published_velocity_uncertainty_kms": 10.0,
+          "luminosity_distance_mpc_planck18": 58.06415651216117
+        }
+      ]
+    },
+    "F565-V2": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "LSB F565-V2",
+      "ned_resolved_object_name": "LSBC F565-V02",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2018ApJ...861...49H",
+          "published_redshift": 0.012285,
+          "published_redshift_uncertainty": 0.00015,
+          "published_velocity_kms": 3683.0,
+          "published_velocity_uncertainty_kms": 45.0,
+          "luminosity_distance_mpc_planck18": 54.94354576457684
+        },
+        {
+          "refcode": "2001AJ....122.2381M",
+          "published_redshift": 0.012278,
+          "published_redshift_uncertainty": 3.3e-05,
+          "published_velocity_kms": 3681.0,
+          "published_velocity_uncertainty_kms": 10.0,
+          "luminosity_distance_mpc_planck18": 54.91194957929218
+        },
+        {
+          "refcode": "2001AJ....122.2381M",
+          "published_redshift": 0.012278,
+          "published_redshift_uncertainty": 3.3e-05,
+          "published_velocity_kms": 3681.0,
+          "published_velocity_uncertainty_kms": 10.0,
+          "luminosity_distance_mpc_planck18": 54.91194957929218
+        }
+      ]
+    },
+    "F571-V1": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "LSB F571-V1",
+      "ned_resolved_object_name": "LSBC F571-V01",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2018ApJ...861...49H",
+          "published_redshift": 0.019033,
+          "published_redshift_uncertainty": 0.000107,
+          "published_velocity_kms": 5706.0,
+          "published_velocity_uncertainty_kms": 32.0,
+          "luminosity_distance_mpc_planck18": 85.55464047426443
+        },
+        {
+          "refcode": "2016SDSSD.C...0000:",
+          "published_redshift": 0.019035,
+          "published_redshift_uncertainty": 1.5e-05,
+          "published_velocity_kms": 5707.0,
+          "published_velocity_uncertainty_kms": 4.0,
+          "luminosity_distance_mpc_planck18": 85.56375813090604
+        },
+        {
+          "refcode": "2016SDSSD.C...0000:",
+          "published_redshift": 0.019035,
+          "published_redshift_uncertainty": 1.5e-05,
+          "published_velocity_kms": 5706.0,
+          "published_velocity_uncertainty_kms": 5.0,
+          "luminosity_distance_mpc_planck18": 85.56375813090604
+        },
+        {
+          "refcode": "2015ApJ...812...89M",
+          "published_redshift": 0.018751,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 5622.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 84.26931729364408
+        },
+        {
+          "refcode": "2001AJ....122.2381M",
+          "published_redshift": 0.019083,
+          "published_redshift_uncertainty": 3.3e-05,
+          "published_velocity_kms": 5721.0,
+          "published_velocity_uncertainty_kms": 10.0,
+          "luminosity_distance_mpc_planck18": 85.78258987271508
+        }
+      ],
+      "position_angle_deg": 165.0,
+      "source": "NED diameters (NED Position Angle); refcode=2007SDSS6.C...0000:"
+    },
+    "NGC1705": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "NGC1705",
+      "ned_resolved_object_name": "NGC 1705",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.002095,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 628.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.297563359274564
+        },
+        {
+          "refcode": "2024A&A...688A.109D",
+          "published_redshift": 0.002107,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 632.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.350904844202915
+        },
+        {
+          "refcode": "2024A&A...685A.168P",
+          "published_redshift": 0.002112,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 633.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.373130750982561
+        },
+        {
+          "refcode": "2019MNRAS.482.4329P",
+          "published_redshift": 0.002098,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 629.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.31089863900493
+        },
+        {
+          "refcode": "2019ApJ...872..134Z",
+          "published_redshift": 0.002085,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 625.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.253112867407395
+        },
+        {
+          "refcode": "2019A&A...623A...5D",
+          "published_redshift": 0.002093,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 627.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.288673206677348
+        },
+        {
+          "refcode": "2018MNRAS.478.1611K",
+          "published_redshift": 0.002108,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 632.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.355350012003168
+        },
+        {
+          "refcode": "2018ApJ...864...40P",
+          "published_redshift": 0.00211,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 633.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.364240367937203
+        }
+      ],
+      "position_angle_deg": 78.0,
+      "source": "NED diameters (NED Position Angle); refcode=2003AJ....125..525J"
+    },
+    "NGC2366": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "NGC2366",
+      "ned_resolved_object_name": "NGC 2366",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024MNRAS.527..603C",
+          "published_redshift": 0.00034,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 102.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 1.5068873815173494
+        },
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.00032,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 96.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 1.4182252132318085
+        },
+        {
+          "refcode": "2022ApJ...926...55S",
+          "published_redshift": 0.000267,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 80.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 1.183283604923005
+        },
+        {
+          "refcode": "2017MNRAS.469.2387P",
+          "published_redshift": 0.000357,
+          "published_redshift_uncertainty": 3.3e-05,
+          "published_velocity_kms": 107.0,
+          "published_velocity_uncertainty_kms": 10.0,
+          "luminosity_distance_mpc_planck18": 1.5822523603338354
+        },
+        {
+          "refcode": "2017MNRAS.466.4159I",
+          "published_redshift": 0.000336,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 101.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 1.489154730546138
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.00032,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 96.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 1.4182252132318085
+        },
+        {
+          "refcode": "2016MNRAS.463.4052P",
+          "published_redshift": 0.000307,
+          "published_redshift_uncertainty": 5e-05,
+          "published_velocity_kms": 92.0,
+          "published_velocity_uncertainty_kms": 15.0,
+          "luminosity_distance_mpc_planck18": 1.3605962605452395
+        },
+        {
+          "refcode": "2016ApJS..226...19F",
+          "published_redshift": 0.000267,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 80.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 1.183283604923005
+        }
+      ],
+      "position_angle_deg": 38.0,
+      "source": "NED diameters (NED Position Angle); refcode=2003AJ....125..525J"
+    },
+    "NGC3109": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "NGC3109",
+      "ned_resolved_object_name": "NGC 3109",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024MNRAS.528..365G",
+          "published_redshift": 0.001351,
+          "published_redshift_uncertainty": 7e-06,
+          "published_velocity_kms": 405.0,
+          "published_velocity_uncertainty_kms": 2.0,
+          "luminosity_distance_mpc_planck18": 5.99229797875081
+        },
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.001344,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 403.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.96121787735435
+        },
+        {
+          "refcode": "2019MNRAS.482.4329P",
+          "published_redshift": 0.001344,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 403.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.96121787735435
+        },
+        {
+          "refcode": "2019ApJ...872..134Z",
+          "published_redshift": 0.001344,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 403.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.96121787735435
+        },
+        {
+          "refcode": "2018A&A...609A..11K",
+          "published_redshift": 0.001344,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 403.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.96121787735435
+        },
+        {
+          "refcode": "2017MNRAS.469.2387P",
+          "published_redshift": 0.001348,
+          "published_redshift_uncertainty": 1.7e-05,
+          "published_velocity_kms": 404.0,
+          "published_velocity_uncertainty_kms": 5.0,
+          "luminosity_distance_mpc_planck18": 5.978977894594155
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.001344,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 403.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.96121787735435
+        },
+        {
+          "refcode": "2017A&A...601A.147F",
+          "published_redshift": 0.0015,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 450.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 6.653938970556693
+        }
+      ],
+      "position_angle_deg": 90.0,
+      "source": "NED diameters (NED Position Angle); refcode=2003AJ....125..525J"
+    },
+    "NGC6789": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "NGC6789",
+      "ned_resolved_object_name": "NGC 6789",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": -0.00047,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": -140.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2019MNRAS.482.4329P",
+          "published_redshift": -0.000557,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": -166.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2018A&A...609A..11K",
+          "published_redshift": -0.000467,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": -139.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": -0.000467,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": -139.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2016AJ....152...50T",
+          "published_redshift": -0.000467,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": -139.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2015ApJS..217...27A",
+          "published_redshift": -0.00047,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": -140.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2014MNRAS.445.1694L",
+          "published_redshift": -0.000504,
+          "published_redshift_uncertainty": 7e-06,
+          "published_velocity_kms": -150.0,
+          "published_velocity_uncertainty_kms": 2.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2014MNRAS.445.1694L",
+          "published_redshift": -0.000504,
+          "published_redshift_uncertainty": 7e-06,
+          "published_velocity_kms": -150.0,
+          "published_velocity_uncertainty_kms": 2.0,
+          "luminosity_distance_mpc_planck18": null
+        }
+      ],
+      "position_angle_deg": 145.0,
+      "source": "NED diameters (NED Position Angle); refcode=20032MASX.C.......:"
+    },
+    "UGC00634": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGC00634",
+      "ned_resolved_object_name": "UGC 00634",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.007392,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 2216.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 32.93807258039755
+        },
+        {
+          "refcode": "2019AJ....157..194H",
+          "published_redshift": 0.007378,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 2212.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 32.875340900212464
+        },
+        {
+          "refcode": "2018ApJ...861...49H",
+          "published_redshift": 0.007378,
+          "published_redshift_uncertainty": 0.00023,
+          "published_velocity_kms": 2212.0,
+          "published_velocity_uncertainty_kms": 69.0,
+          "luminosity_distance_mpc_planck18": 32.875340900212464
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.007382,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 2213.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 32.89326410263613
+        },
+        {
+          "refcode": "2016AJ....152...50T",
+          "published_redshift": 0.007385,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 2214.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 32.90670657520941
+        },
+        {
+          "refcode": "2015MNRAS.447.1531C",
+          "published_redshift": 0.007385,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 2214.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 32.90670657520941
+        },
+        {
+          "refcode": "2015ApJS..217...27A",
+          "published_redshift": 0.007392,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 2216.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 32.93807258039755
+        },
+        {
+          "refcode": "2014MNRAS.444..527S",
+          "published_redshift": 0.007385,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 2214.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 32.90670657520941
+        }
+      ],
+      "position_angle_deg": 35.0,
+      "source": "NED diameters (NED Position Angle); refcode=1991RC3.9.C...0000d"
+    },
+    "UGC00891": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGC00891",
+      "ned_resolved_object_name": "UGC 00891",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.002145,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 643.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.51982598537527
+        },
+        {
+          "refcode": "2019MNRAS.482.4329P",
+          "published_redshift": 0.002128,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 638.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.444254791345918
+        },
+        {
+          "refcode": "2019AJ....157..194H",
+          "published_redshift": 0.002151,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 645.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.546498639157507
+        },
+        {
+          "refcode": "2018ApJ...861...49H",
+          "published_redshift": 0.002151,
+          "published_redshift_uncertainty": 0.000183,
+          "published_velocity_kms": 645.0,
+          "published_velocity_uncertainty_kms": 55.0,
+          "luminosity_distance_mpc_planck18": 9.546498639157507
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.002145,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 643.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.51982598537527
+        },
+        {
+          "refcode": "2016AJ....152...50T",
+          "published_redshift": 0.002145,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 643.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.51982598537527
+        },
+        {
+          "refcode": "2015MNRAS.447.1531C",
+          "published_redshift": 0.002148,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 644.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.533162281767424
+        },
+        {
+          "refcode": "2007AJ....134.1046H",
+          "published_redshift": 0.002145,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 643.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.51982598537527
+        }
+      ],
+      "position_angle_deg": 47.0,
+      "source": "NED diameters (NED Position Angle); refcode=1991RC3.9.C...0000d"
+    },
+    "UGC04483": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGC04483",
+      "ned_resolved_object_name": "UGC 04483",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.00052,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 156.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.304969127050787
+        },
+        {
+          "refcode": "2023A&A...677A..44R",
+          "published_redshift": 0.0006,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 180.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.659742740173651
+        },
+        {
+          "refcode": "2021MNRAS.502.5711N",
+          "published_redshift": 0.000504,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 151.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.234019618767781
+        },
+        {
+          "refcode": "2019A&A...623A...5D",
+          "published_redshift": 0.000523,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 157.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.318272353360254
+        },
+        {
+          "refcode": "2018A&A...609A..37C",
+          "published_redshift": 0.00052,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 156.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.304969127050787
+        },
+        {
+          "refcode": "2018A&A...609A..37C",
+          "published_redshift": 0.000524,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 157.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.3227067757093725
+        },
+        {
+          "refcode": "2016ApJS..226...19F",
+          "published_redshift": 0.000519,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 156.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.3005347318602873
+        },
+        {
+          "refcode": "2015MNRAS.450.4207B",
+          "published_redshift": 0.00052,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 156.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 2.304969127050787
+        }
+      ],
+      "position_angle_deg": 163.0,
+      "source": "NED diameters (NED Position Angle); refcode=1991RC3.9.C...0000d"
+    },
+    "UGC04499": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGC04499",
+      "ned_resolved_object_name": "UGC 04499",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024MNRAS.528.6593G",
+          "published_redshift": 0.00229,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 687.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 10.16448341563648
+        },
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.002198,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 659.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 9.755442868399994
+        },
+        {
+          "refcode": "2022ApJS..259...43C",
+          "published_redshift": 0.002292,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 687.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 10.17337623845714
+        },
+        {
+          "refcode": "2021MNRAS.502.5711N",
+          "published_redshift": 0.00227,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 681.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 10.07555667826785
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.002308,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 692.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 10.244519796829957
+        },
+        {
+          "refcode": "2017ApJ...837..120G",
+          "published_redshift": 0.0023,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 690.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 10.20894780079821
+        },
+        {
+          "refcode": "2016SDSSD.C...0000:",
+          "published_redshift": 0.00229,
+          "published_redshift_uncertainty": 8e-06,
+          "published_velocity_kms": 687.0,
+          "published_velocity_uncertainty_kms": 2.0,
+          "luminosity_distance_mpc_planck18": 10.16448341563648
+        },
+        {
+          "refcode": "2016MNRAS.455..754B",
+          "published_redshift": 0.002268,
+          "published_redshift_uncertainty": 3e-06,
+          "published_velocity_kms": 680.0,
+          "published_velocity_uncertainty_kms": 1.0,
+          "luminosity_distance_mpc_planck18": 10.06666415361609
+        }
+      ],
+      "position_angle_deg": 159.0,
+      "source": "NED diameters (NED Position Angle); refcode=2007SDSS6.C...0000:"
+    },
+    "UGC05764": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGC05764",
+      "ned_resolved_object_name": "UGC 05764",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.001953,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 585.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 8.66642990117163
+        },
+        {
+          "refcode": "2022ApJS..259...43C",
+          "published_redshift": 0.001941,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 582.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 8.61310094285747
+        },
+        {
+          "refcode": "2019AJ....157..194H",
+          "published_redshift": 0.001941,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 582.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 8.61310094285747
+        },
+        {
+          "refcode": "2018ApJ...861...49H",
+          "published_redshift": 0.001941,
+          "published_redshift_uncertainty": 0.00017,
+          "published_velocity_kms": 582.0,
+          "published_velocity_uncertainty_kms": 51.0,
+          "luminosity_distance_mpc_planck18": 8.61310094285747
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.001941,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 582.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 8.61310094285747
+        },
+        {
+          "refcode": "2016SDSSD.C...0000:",
+          "published_redshift": 0.001951,
+          "published_redshift_uncertainty": 1.2e-05,
+          "published_velocity_kms": 585.0,
+          "published_velocity_uncertainty_kms": 4.0,
+          "luminosity_distance_mpc_planck18": 8.657541673662264
+        },
+        {
+          "refcode": "2015MNRAS.447.1531C",
+          "published_redshift": 0.001941,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 582.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 8.61310094285747
+        },
+        {
+          "refcode": "2015ApJS..217...27A",
+          "published_redshift": 0.001955,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 586.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 8.675318155796996
+        }
+      ],
+      "position_angle_deg": 60.0,
+      "source": "NED diameters (NED Position Angle); refcode=1991RC3.9.C...0000d"
+    },
+    "UGC05918": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGC05918",
+      "ned_resolved_object_name": "UGC 05918",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.001134,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 340.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.0289694097158195
+        },
+        {
+          "refcode": "2022ApJS..259...43C",
+          "published_redshift": 0.001131,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 339.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.015653742137679
+        },
+        {
+          "refcode": "2021MNRAS.502.5711N",
+          "published_redshift": 0.001123,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 337.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 4.980145593808353
+        },
+        {
+          "refcode": "2017MNRAS.466.4159I",
+          "published_redshift": 0.00113,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 339.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.011215199848523
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.001134,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 340.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 5.0289694097158195
+        },
+        {
+          "refcode": "2016SDSSD.C...0000:",
+          "published_redshift": 0.00143,
+          "published_redshift_uncertainty": 0.00026,
+          "published_velocity_kms": 429.0,
+          "published_velocity_uncertainty_kms": 78.0,
+          "luminosity_distance_mpc_planck18": 6.343082165956978
+        },
+        {
+          "refcode": "2015ApJS..217...27A",
+          "published_redshift": 0.001127,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 338.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 4.997899613691836
+        },
+        {
+          "refcode": "2015AJ....149..180O",
+          "published_redshift": 0.001134,
+          "published_redshift_uncertainty": 3e-06,
+          "published_velocity_kms": 340.0,
+          "published_velocity_uncertainty_kms": 1.0,
+          "luminosity_distance_mpc_planck18": 5.0289694097158195
+        }
+      ]
+    },
+    "UGC07125": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGC07125",
+      "ned_resolved_object_name": "UGC 07125",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.003568,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 1070.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 15.852519916232573
+        },
+        {
+          "refcode": "2022ApJS..259...43C",
+          "published_redshift": 0.003569,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 1070.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 15.856974978528815
+        },
+        {
+          "refcode": "2022A&A...660A.138S",
+          "published_redshift": 0.003626,
+          "published_redshift_uncertainty": 7e-06,
+          "published_velocity_kms": 1087.0,
+          "published_velocity_uncertainty_kms": 2.0,
+          "luminosity_distance_mpc_planck18": 16.11092471499369
+        },
+        {
+          "refcode": "2021MNRAS.502.5711N",
+          "published_redshift": 0.003585,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 1075.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 15.928256895572197
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.003572,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 1071.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 15.87034020601937
+        },
+        {
+          "refcode": "2017ApJ...837..120G",
+          "published_redshift": 0.0036,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 1079.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 15.995085266094767
+        },
+        {
+          "refcode": "2016SDSSD.C...0000:",
+          "published_redshift": 0.003568,
+          "published_redshift_uncertainty": 8e-06,
+          "published_velocity_kms": 1070.0,
+          "published_velocity_uncertainty_kms": 2.0,
+          "luminosity_distance_mpc_planck18": 15.852519916232573
+        },
+        {
+          "refcode": "2016AJ....152...50T",
+          "published_redshift": 0.003569,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 1070.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 15.856974978528815
+        }
+      ],
+      "position_angle_deg": 85.0,
+      "source": "NED diameters (NED Position Angle); refcode=2006SDSS5.C...0000:"
+    },
+    "UGC07399": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGC07399",
+      "ned_resolved_object_name": "NGC 4288",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.00177,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 531.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.853269362062499
+        },
+        {
+          "refcode": "2022ApJS..259...43C",
+          "published_redshift": 0.001771,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 531.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.857712245304869
+        },
+        {
+          "refcode": "2022ApJ...932...74C",
+          "published_redshift": 0.001735,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 520.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.69777272026023
+        },
+        {
+          "refcode": "2021MNRAS.502.5711N",
+          "published_redshift": 0.001781,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 534.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.9021414506468295
+        },
+        {
+          "refcode": "2019ApJ...872..148C",
+          "published_redshift": 0.001735,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 520.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.69777272026023
+        },
+        {
+          "refcode": "2019ApJ...872..134Z",
+          "published_redshift": 0.001768,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 530.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.844383615918844
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.001768,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 530.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 7.844383615918844
+        },
+        {
+          "refcode": "2017ApJ...837..120G",
+          "published_redshift": 0.0233,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 6985.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 105.06759528721011
+        }
+      ],
+      "position_angle_deg": 133.0,
+      "source": "NED diameters (NED Position Angle); refcode=2005SDSS4.C...0000:"
+    },
+    "UGC07559": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGC07559",
+      "ned_resolved_object_name": "UGC 07559",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.000727,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 218.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.2230350884102164
+        },
+        {
+          "refcode": "2021MNRAS.502.5711N",
+          "published_redshift": 0.000722,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 217.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.200856153828374
+        },
+        {
+          "refcode": "2017MNRAS.466.4159I",
+          "published_redshift": 0.000715,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 214.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.169805930516819
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.000724,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 217.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.209727707296676
+        },
+        {
+          "refcode": "2016AJ....152...50T",
+          "published_redshift": 0.000724,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 217.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.209727707296676
+        },
+        {
+          "refcode": "2015ApJS..217...27A",
+          "published_redshift": 0.000727,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 218.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.2230350884102164
+        },
+        {
+          "refcode": "2015AJ....149..180O",
+          "published_redshift": 0.000732,
+          "published_redshift_uncertainty": 6e-06,
+          "published_velocity_kms": 219.0,
+          "published_velocity_uncertainty_kms": 2.0,
+          "luminosity_distance_mpc_planck18": 3.2452141926951836
+        },
+        {
+          "refcode": "2015AJ....149..180O",
+          "published_redshift": 0.000732,
+          "published_redshift_uncertainty": 6e-06,
+          "published_velocity_kms": 219.0,
+          "published_velocity_uncertainty_kms": 2.0,
+          "luminosity_distance_mpc_planck18": 3.2452141926951836
+        }
+      ]
+    },
+    "UGC09992": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGC09992",
+      "ned_resolved_object_name": "UGC 09992",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.001411,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 423.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 6.258712482393796
+        },
+        {
+          "refcode": "2022ApJS..259...43C",
+          "published_redshift": 0.001428,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 428.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 6.334201031324488
+        },
+        {
+          "refcode": "2021MNRAS.502.5711N",
+          "published_redshift": 0.001436,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 431.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 6.369725732643614
+        },
+        {
+          "refcode": "2019MNRAS.482.4329P",
+          "published_redshift": 0.001428,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 428.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 6.334201031324488
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.001411,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 423.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 6.258712482393796
+        },
+        {
+          "refcode": "2016AJ....152...50T",
+          "published_redshift": 0.001428,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 428.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 6.334201031324488
+        },
+        {
+          "refcode": "2013AJ....145..101K",
+          "published_redshift": 0.001411,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 423.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 6.258712482393796
+        },
+        {
+          "refcode": "1991RC3.9.C...0000d",
+          "published_redshift": 0.001424,
+          "published_redshift_uncertainty": 1.7e-05,
+          "published_velocity_kms": 427.0,
+          "published_velocity_uncertainty_kms": 5.0,
+          "luminosity_distance_mpc_planck18": 6.316438843454453
+        }
+      ]
+    },
+    "UGCA281": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGCA281",
+      "ned_resolved_object_name": "UGCA 281",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024MNRAS.527..603C",
+          "published_redshift": 0.00094,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 282.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 4.168015289512301
+        },
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.000999,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 299.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 4.429824826949218
+        },
+        {
+          "refcode": "2024A&A...685A.168P",
+          "published_redshift": 0.000937,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 281.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 4.154703571286343
+        },
+        {
+          "refcode": "2024A&A...682A.174M",
+          "published_redshift": 0.000999,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 299.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 4.429824826949218
+        },
+        {
+          "refcode": "2023A&A...677A..44R",
+          "published_redshift": 0.001,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 300.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 4.434262480323607
+        },
+        {
+          "refcode": "2022ApJS..259...37S",
+          "published_redshift": 0.00094,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 282.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 4.168015289512301
+        },
+        {
+          "refcode": "2018MNRAS.481.1976Z",
+          "published_redshift": 0.001,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 300.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 4.434262480323607
+        },
+        {
+          "refcode": "2018ApJ...864..144D",
+          "published_redshift": 0.0009,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 270.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.9905307352843082
+        }
+      ],
+      "position_angle_deg": 97.0,
+      "source": "NED diameters (NED Position Angle); refcode=2007SDSS6.C...0000:"
+    },
+    "UGCA442": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGCA442",
+      "ned_resolved_object_name": "UGCA 442",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": 0.000891,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 267.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.950598207063644
+        },
+        {
+          "refcode": "2022MNRAS.515.3270S",
+          "published_redshift": 0.000891,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 267.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.950598207063644
+        },
+        {
+          "refcode": "2021A&A...652A..48M",
+          "published_redshift": 0.00089,
+          "published_redshift_uncertainty": 1.7e-05,
+          "published_velocity_kms": 267.0,
+          "published_velocity_uncertainty_kms": 5.0,
+          "luminosity_distance_mpc_planck18": 3.946161293417991
+        },
+        {
+          "refcode": "2019A&A...623A...5D",
+          "published_redshift": 0.000896,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 269.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.972782877095319
+        },
+        {
+          "refcode": "2018MNRAS.478.1611K",
+          "published_redshift": 0.000891,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 267.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.950598207063644
+        },
+        {
+          "refcode": "2018A&A...609A..37C",
+          "published_redshift": 0.000891,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 267.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.950598207063644
+        },
+        {
+          "refcode": "2018A&A...609A..37C",
+          "published_redshift": 0.000897,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 269.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.977219831462284
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": 0.000891,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": 267.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": 3.950598207063644
+        }
+      ],
+      "position_angle_deg": 90.0,
+      "source": "NED diameters (NED Position Angle); refcode=2003AJ....125..525J"
+    },
+    "UGCA444": {
+      "ned_fetch_status": "ok",
+      "ned_query_string": "UGCA444",
+      "ned_resolved_object_name": "WLM",
+      "ned_kinematic_measurements_by_recency": [
+        {
+          "refcode": "2024AJ....167...31O",
+          "published_redshift": -0.000407,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": -121.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2022A&A...660L..11Y",
+          "published_redshift": -0.000434,
+          "published_redshift_uncertainty": 3e-06,
+          "published_velocity_kms": -129.0,
+          "published_velocity_uncertainty_kms": 1.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2022A&A...660L..11Y",
+          "published_redshift": -0.000434,
+          "published_redshift_uncertainty": 3e-06,
+          "published_velocity_kms": -129.0,
+          "published_velocity_uncertainty_kms": 1.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2020MNRAS.497.4795I",
+          "published_redshift": -0.000407,
+          "published_redshift_uncertainty": 1.3e-05,
+          "published_velocity_kms": -121.0,
+          "published_velocity_uncertainty_kms": 4.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2018A&A...609A..11K",
+          "published_redshift": -0.000407,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": -121.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2017MNRAS.466.4159I",
+          "published_redshift": -0.000414,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": -123.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2017ApJ...843...16K",
+          "published_redshift": -0.000407,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": -121.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": null
+        },
+        {
+          "refcode": "2016AJ....152...50T",
+          "published_redshift": -0.00036,
+          "published_redshift_uncertainty": 0.0,
+          "published_velocity_kms": -107.0,
+          "published_velocity_uncertainty_kms": 0.0,
+          "luminosity_distance_mpc_planck18": null
+        }
+      ],
+      "position_angle_deg": 30.0,
+      "source": "NED diameters (NED Position Angle); refcode=2003AJ....125..525J"
+    }
+  }
+}

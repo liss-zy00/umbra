@@ -1,0 +1,29 @@
+# Project: dark-matter (E-G Rotation-Curve Pipeline)
+#
+# Runtime + test dependencies actually imported by the codebase. Pinned to the
+# versions validated by the current passing test suite (96 tests, conda env
+# `dark-matter`). Use `>=` if you want forward-compatible upgrades.
+#
+# Conda-managed system packages (anaconda-*, conda, libmambapy, etc.) are
+# intentionally NOT listed here — they belong to the Conda environment, not to
+# this project's dependency manifest.
+
+# --- Scientific core ---------------------------------------------------------
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+matplotlib==3.10.9
+
+# --- Astronomy stack ---------------------------------------------------------
+astropy==7.2.0
+healpy==1.19.0          # HEALPix sky maps for Planck polarization (PlanckProvider)
+astroquery==0.4.11      # Optional NED metadata lookups (NedProvider)
+
+# --- UX (terminal) -----------------------------------------------------------
+rich==14.2.0
+tqdm==4.67.1
+pytest-cov              # Coverage plugin used by `pytest --cov=src` (see README)
+
+# --- Optional 3D visualization (VTK / PyVista) -------------------------------
+# Not imported by the default pipeline or test suite; use when running 3D viz helpers.
+pyvista==0.45.3
