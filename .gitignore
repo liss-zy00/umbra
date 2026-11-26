@@ -46,3 +46,6 @@ desktop.ini
 # Large external data (download separately — see sources/planck/README.md)
 # ---------------------------------------------------------------------------
 sources/planck/*.fits
+
+# Notas privadas (nunca no git)
+docs/personal/
