@@ -1,3 +1,5 @@
+> **[CRIANDO] Umbra2.** O guia abaixo é da versão atual (Umbra 1).
+
 # E-G Rotation-Curve Pipeline — Software Guide
 
 This repository implements a batch pipeline that fuses **SPARC** kinematics, **NED** coordinates, **Planck** polarization (HEALPix, memmap), and an **MHD magnetic-pressure** test of the **acceleration gap** per galaxy. Scientific motivation and equations are in [`docs/theory/EG_MODEL_THEORY_EN.md`](docs/theory/EG_MODEL_THEORY_EN.md) (PT: [`EG_MODEL_THEORY_PT.md`](docs/theory/EG_MODEL_THEORY_PT.md)); limitations of the ansatz are summarized in Section 5 of those theory files. For how to read pipeline outputs, see [`docs/results_interpretation/`](docs/results_interpretation/) (narratives and data guides). Theory files are not overwritten by runs.
